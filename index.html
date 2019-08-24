@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="main.js" type="text/javascript"></script>
+  <title>Autocomplete</title>
+  <style>
+    input:focus{
+      outline: none;
+    }
+    a{
+      display: block
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <input type="text" placeholder="buscar..." id="searchBox" onkeyup="handleSearch()">
+  </div>
+  <ul id="search-results"></ul>
+
+
+  <ul>
+    <li><a href="#" onclick="searchCategory('popular')">Popular</a></li>
+    <li><a href="#" onclick="searchCategory('top_rated')">Top de lo top del top (bat)</a></li>
+  </ul>
+  <div id="categories-results">
+
+  </div>
+</body>
+</html>
